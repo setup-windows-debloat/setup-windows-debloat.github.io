@@ -1110,4 +1110,12 @@ $process.PriorityClass = "BelowNormal"
 
 ```
 ---
+
+# 📥 Área de Downloads
+
+Clique no botão abaixo para baixar o script operacional de automação diretamente para a sua máquina:
+
+[📥 Baixar Script PowerShell](/arquivos/meu-script.ps1){.btn-download download="meu-script.ps1"}
+
+---
 *Página gerada estaticamente com foco em alta performance e legibilidade noturna.*
