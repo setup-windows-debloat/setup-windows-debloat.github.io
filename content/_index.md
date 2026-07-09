@@ -105,4 +105,4 @@ Clique no botão abaixo para baixar o script operacional de automação diretame
 [📥 Baixar windows-debloat.ps1](/files/windows-debloat.ps1)
 
 ---
-*Página gerada estaticamente com foco em alta performance e legibilidade noturna.*
+*credits:  [@lue93](https://github.com/lue93)*
