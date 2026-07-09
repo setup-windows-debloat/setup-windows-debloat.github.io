@@ -53,7 +53,7 @@ Antes de realizar o debloat, é recomendável criar um ponto de restauração no
 
 Clique no botão abaixo para baixar o script operacional de automação diretamente para a sua máquina:
 
-[📥 Baixar windows-debloat.ps1](/files/windows-debloat.ps1){.btn-download download="windows-debloat.ps1"}
+[📥 Baixar windows-debloat.ps1](/files/windows-debloat.ps1)
 
 ---
 *Página gerada estaticamente com foco em alta performance e legibilidade noturna.*
