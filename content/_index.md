@@ -24,6 +24,31 @@ Antes de realizar o debloat, é recomendável criar um ponto de restauração no
 
 ---
 
+### 📋 O que o Script Faz? (Resumo das Etapas)
+
+* **Expurga e Bloqueia a Telemetria:** Interrompe permanentemente os serviços de coleta de dados da Microsoft (como `DiagTrack` e `WerSvc`), blindando a privacidade do sistema.
+* **Aniquila o Consumo Fantasma de RAM:** Desativa subsistemas pesados como o `SysMain` (Superfetch) e o indexador `Windows Search`, eliminando picos de leitura e escrita em SSDs/NVMes.
+* **Destrói Recursos Cloud Ocultos:** Sepulta a Cortana, desativa as pesquisas do Bing integradas ao menu iniciar e remove o pacote de Widgets (`WebExperience`).
+* **Maximiza os Efeitos Visuais:** Configura o sistema para o modo de "Melhor Desempenho", eliminando transições, sombras e transparências desnecessárias.
+* **Executa a Higienização da Memória Física:** Injeta código C# nativo diretamente no Kernel NT para esvaziar o *Working Set* de todos os processos zumbis em execução.
+* **Silencia Aplicativos em Segundo Plano:** Aplica restrições estritas no registro do Windows para bloquear o funcionamento em background de mais de 30 pacotes (incluindo Copilot, Xbox, Spotify e Teams).
+* **Blinda o Navegador Edge:** Cria políticas locais rígidas (`HKLM`) para impedir que o Microsoft Edge pré-carregue ou execute extensões secretamente.
+
+---
+
+### 📊 Tabela de Impacto: Antes vs. Depois
+
+| Componente do Sistema | Estado Original (Invasivo/Pesado) | Estado Modificado (Otimizado/Estável) | Benefício Direto Obtido |
+| :--- | :--- | :--- | :--- |
+| **Coleta de Diagnósticos** | Telemetria ativa enviando dados (`DiagTrack`). | **Desativada permanentemente**. | Privacidade blindada e economia de banda. |
+| **Gerenciamento de Cache** | `SysMain` e `WSearch` consumindo RAM e Disco. | **Serviços abortados e congelados**. | Fim dos engasgos (*stuttering*) em jogos e código. |
+| **Menu Iniciar & Barra** | Widgets de notícias e buscas do Bing ativos. | **Interface limpa e local**. | Abertura instantânea do menu de busca. |
+| **Efeitos de Interface** | Animações e transparências pesadas. | **Estilo clássico e otimizado**. | Redução imediata na latência de renderização de DWM. |
+| **Microsoft Edge** | Processos zumbis pré-carregados na inicialização. | **Bloqueio total em segundo plano**. | Liberação instantânea de megabytes preciosos de RAM. |
+| **Recurso Windows Recall** | Rastreamento contínuo de tela ativo. | **Recurso removido via DISM**. | Segurança de dados elevada ao nível máximo. |
+
+---
+
 # 📥 Área de Downloads
 
 Clique no botão abaixo para baixar o script operacional de automação diretamente para a sua máquina:
