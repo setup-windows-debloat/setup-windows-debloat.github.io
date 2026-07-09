@@ -18,6 +18,11 @@ O termo "debloat" significa "desinchar" e, no contexto do Windows, refere-se à 
 - Aumento da Privacidade: Ao eliminar aplicativos que coletam dados, você pode proteger melhor suas informações pessoais.
 - Liberação de Espaço: O debloat ajuda a liberar espaço em disco, permitindo que você armazene arquivos e aplicativos mais importantes
 
+
+## Considerações Finais
+Antes de realizar o debloat, é recomendável criar um ponto de restauração no sistema, para que você possa reverter as alterações caso algo não funcione como esperado. O debloat pode ser uma maneira eficaz de personalizar e otimizar sua experiência no Windows 10, tornando o sistema mais leve e adaptado às suas necessidade
+
+
 ## 🐚 Script PowerShell
 
 Script para deixar o Windows 10/11 mais "leve", consumindo menos RAM.
