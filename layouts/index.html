@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <style>
+        /* 🎨 Configuração do Tema Dark Mode */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #121214; /* Fundo Grafite Escuro */
+            color: #e1e1e6;            /* Texto Cinza Claro Confortável */
+            max-width: 650px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.7;
+        }
+
+        /* 🏷️ Estilização dos Títulos Injetados pelo Markdown */
+        h1, h2, h3, h4 {
+            color: #6366f1; /* Destaque em tom Índigo/Neon */
+            margin-top: 1.5em;
+        }
+
+        h1 {
+            border-bottom: 1px solid #29292e;
+            padding-bottom: 10px;
+        }
+
+        /* 🔗 Links */
+        a {
+            color: #4ade80; /* Verde Neon sutil */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 📋 Customização de Listas e Elementos Fortes */
+        strong {
+            color: #ffffff; /* Branco puro para dar ênfase máxima */
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* 💻 Blocos de Código Sutil (Inline Code) */
+        code {
+            background-color: #202024;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #ff79c6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🔮 O Hugo injetará o conteúdo do seu content/_index.md aqui dentro -->
+    {{ .Content }}
+
+</body>
+</html>
