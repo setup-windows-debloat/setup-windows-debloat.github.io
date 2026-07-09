@@ -1,22 +1,13 @@
 ---
-title: "🌌 Meu Espaço Dark Mode"
+title: "🌌 Windows Debloat "
 date: 2026-07-08
 draft: false
 ---
 
-# 🛸 Explorando o Universo com Hugo
+# 🌌 Windows Debloat
 
-Este é um exemplo prático de uma página inicial minimalista. O texto que você está lendo agora foi escrito em formato Markdown estruturado e estilizado dinamicamente pelo nosso tema escuro personalizado.
+Windows Debloat, refere-se ao processo de remoção de aplicativos e serviços pré-instalados no Windows 10 que não são utilizados, visando otimizar o desempenho do sistema e aumentar a privacidade..
 
-### 🛠️ Tecnologias Ativas no Projeto:
-* **Hugo:** O motor de renderização estática mais veloz do planeta.
-* **GitHub Pages:** Infraestrutura de hospedagem segura, global e gratuita.
-* **CSS Customizado:** Variáveis otimizadas para o conforto visual dos seus olhos.
-
-### 💻 Notas de Desenvolvimento:
-Para modificar a aparência desta página, basta abrir o arquivo de configuração de estilos localizado em `layouts/index.html`. Você também pode adicionar trechos de código como `hugo server` para rodar o ambiente de testes localmente.
-
- 
 # 🐚 Script PowerShell
 
 Script para deixar o Windows 10/11 mais "leve", consumindo menos RAM.
