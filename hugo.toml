@@ -1,4 +1,4 @@
-baseURL = 'https://github.com/windows-debloat/windows-debloat.github.io/'
+baseURL = 'https://github.com/setup-windows-debloat/setup-windows-debloat.github.io/'
 languageCode = 'pt-br'
 title = 'Windows Debloat!'
 theme = [] # Mantemos vazio para usar o layout customizado abaixo
