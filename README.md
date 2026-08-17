@@ -1,1 +1,1 @@
-# windows-debloat.github.io
+# setup-windows-debloat.github.io
