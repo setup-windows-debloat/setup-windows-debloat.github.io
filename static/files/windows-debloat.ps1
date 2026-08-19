@@ -343,67 +343,6 @@ Stop-Process -Name pwahelper -Force -ErrorAction SilentlyContinue
 
 
 
-# -------------------------------------------------------------------------------
-# ETAPA 14: API MEMORY FLUSH (FORÇAR COMPACTAÇÃO E DEVOLUÇÃO DE RAM AO SISTEMA)
-# -------------------------------------------------------------------------------
-
-Write-Host ""
-
-Write-Host "[4/4] Executando chamada de API nativa para esvaziamento do Working Set..." -ForegroundColor Green
-
-
-
-# Código C# injetado no PowerShell para acessar a API de Gerenciamento de Memória do Kernel NT
-
-$MemoryFlushCode = @"
-
-using System;
-
-using System.Diagnostics;
-
-using System.Runtime.InteropServices;
-
-
-
-public class MemoryOptimizer {
-
-    [DllImport("psapi.dll")]
-
-    public static extern int EmptyWorkingSet(IntPtr hwProc);
-
-
-
-    public static void Flush() {
-
-        Process[] processes = Process.GetProcesses();
-
-        foreach (Process p in processes) {
-
-            try {
-
-                EmptyWorkingSet(p.Handle);
-
-            } catch { }
-
-        }
-
-    }
-
-}
-
-"@
-
-
-
-Add-Type -TypeDefinition $MemoryFlushCode
-
-[MemoryOptimizer]::Flush()
-
-
-Write-Host " -> Memória física esvaziada e higienizada com sucesso!" -ForegroundColor Green
-
-
-
 # Desativa o Recall (Windows 11 24H2 ou superior)
 DISM /Online /Disable-Feature /FeatureName:"Recall"
 
